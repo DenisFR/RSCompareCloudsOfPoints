@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LibraryResource xmlns="urn:abb-robotics-robotstudio-libraryresource"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="urn:abb-robotics-robotstudio-libraryresource file:///C:\Program%20Files%20(x86)\ABB%20Industrial%20IT\Robotics%20IT\SDK\RobotStudio%20SDK%206.07\LibraryResourceSchema.xsd">
+	<SmartComponent name="RSCompareCloudsOfPoints" description="Compare and manage two bin Cloud of Points. Colored from green for same Z to Red for maximal amplitude.">
+    <DynamicProperty name="FileName_1" description="FileName of First Cloud of Points. Colored in gray if not found in other file."/>
+    <DynamicProperty name="FileName_2" description="FileName of Second Cloud of Points. Colored in gray-blue if not found in other file."/>
+    <DynamicProperty name="Unit" description="Unit/Scale of Cloud of Points. (For the next Open)"/>
+    <DynamicProperty name="Epsilon" description="Roundoff for X and Y values of Cloud of Points to compare. (For the next Open)"/>
+    <DynamicProperty name="Averaging" description="Averaging Z values for same X and Y point. Else only get first value. (For the next Open)"/>
+    <DynamicProperty name="Transform" description="Transformation of Result Cloud of Points."/>
+    <DynamicProperty name="Visible" description="If Result Cloud of Points is visible."/>
+    <IOSignal name="Open" description="Open two Clouds of Points file to Compare. (Clear Olders)"/>
+    <IOSignal name="Delete" description="Delete Clouds of Points. (Use it before removing Component)"/>
+  </SmartComponent>
+</LibraryResource>
